@@ -17,7 +17,3 @@ RegisterNetEvent('TopXNotify:Notify')
 AddEventHandler('TopXNotify:Notify', function(type, time, message, sound)
 	Notify(type, time, message, sound)
 end)
-
-exports('Notify', function(type, time, message, sound)
-	TriggerEvent("TopXNotify:Notify", type, time, message, sound)
-end)
