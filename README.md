@@ -22,13 +22,13 @@ exports.TopXNotify:Notify("success", 3000, "This is a example", true)
 ## Server Side Usage
 
 ```lua
-TriggerServerEvent("TopXNotify:Notify", source, type, time, message, sound)
+TriggerClientEvent("TopXNotify:Notify", source, type, time, message, sound)
 ```
 
 ## Server Side Example
 
 ```lua
-TriggerServerEvent("TopXNotify:Notify", source, "info", 5000, "This is a example", false)
+TriggerClientEvent("TopXNotify:Notify", source, "info", 5000, "This is a example", false)
 ```
 ### Types
 
