@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;500;800;1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    color: #eee;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+button {
+    color: black;
+}
+
+i {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 21px;
+}
+
+
+.notification-container {
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    transform: translate(0, -30%);
+}
+
+.notify {
+    position: relative;
+    max-width: 400px;
+    min-height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    display: none;
+    animation: slideIn .5s ease;
+    background-color: rgba(51, 51, 51, 1);
+}
+
+.notify-error {
+    background: linear-gradient(90deg, rgba(255, 53, 91, 1) 5%, rgba(51, 51, 51, 1) 33%);
+}
+
+.notify-info {
+    background: linear-gradient(90deg, rgba(47, 134, 235, 1) 5%, rgba(51, 51, 51, 1) 33%);
+}
+
+.notify-success {
+    background: linear-gradient(90deg, rgba(71, 215, 100, 1) 5%, rgba(51, 51, 51, 1) 33%);
+}
+
+.notify-warning {
+    background: linear-gradient(90deg, rgba(255, 192, 33, 1) 5%, rgba(51, 51, 51, 1) 33%);
+}
+
+.notify-sms {
+    background: linear-gradient(90deg, rgb(139, 21, 143) 5%, rgba(51, 51, 51, 1) 33%);
+}
+
+.notify-bank {
+    background: linear-gradient(90deg, rgb(209, 128, 6) 5%, rgba(51, 51, 51, 1) 33%);
+}
+
+.notify-text {
+    line-height: 20px;
+}
+
+.notify-text h5 {
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.notify-text p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@keyframes slideIn {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -100%;
+    }
+}
